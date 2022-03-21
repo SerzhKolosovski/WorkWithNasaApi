@@ -1,3 +1,50 @@
 <resources>
-    <string name="app_name">WorkWithNasaApi</string>
+    <string name="app_name" translatable="false">WorkWithNasaApi</string>
+    <string name="google_map_api_key" translatable="false">AIzaSyB0pW0x7RVFo5RY8EFuz-QdER_sE8o68Uo</string>
+
+    // Language screen
+    <string name="language_title">Language</string>
+    <string name="language_button_en">English</string>
+    <string name="language_button_ru" translatable="false">Russian</string>
+
+    // Dark mode screen
+    <string name="night_mode_title">Dark theme</string>
+    <string name="night_mode_button_dark">Dark mode</string>
+    <string name="night_mode_button_light">Light mode</string>
+    <string name="night_mode_button_default">System default mode</string>
+
+    // Main page
+    <string name="setting_title_main_page">SETTINGS</string>
+    <string name="nasa_observatory_main_page">NASA observatory</string>
+    <string name="photo_of_rovers_main_page">Photo of rovers</string>
+    <string name="welcome_to_nasa_api_main_page">Welcome to NASA API</string>
+    // Details photo
+    <string name="id_photo_details_photo">ID photo : </string>
+    <string name="sol_details_photo">Sol : </string>
+    <string name="name_camera_details_photo">"Name camera : "</string>
+    <string name="landing_date_details_photo">"LandingDate : "</string>
+    <string name="launchDate_details_photo">"LaunchDate : "</string>
+    <string name="status_of_rover_details_photo">Status of rover : </string>
+    <string name="download_picture"><![CDATA[Download picture >>>]]></string>
+    // Item photo
+    <string name="photo_id_item_photo">Photo ID: %1$d</string>
+    <string name="photo_data_item_photo">Photo data: </string>
+    // Observatory
+    <string name="south_african_astronomical_observatory">South African Astronomical Observatory</string>
+    <string name="keck_observatory">Keck Observatory</string>
+    <string name="ligo_laser_observatory">LIGO Laser Observatory</string>
+    <string name="heavenly_eye_in_china">Heavenly Eye in China</string>
+    <string name="description_the_south_african_observatory">The South African Astronomical Observatory (SAAO) is located in Cape Town. This is one of the most modern space exploration. Oversees the operations of the National Research Foundation South Coast Observatory. Almost all telescopes are located far from the main research center - in Sutherland. There are four large telescopes on the territory of the observatory, including SALT and Lesedi. In October 2017, SAAO joined 70 scientific observatories investigating the explosion of two colliding neutron stars just after the gravitational wave integration of the American LIGO observatory and the European Virgo antenna hit.</string>
+    <string name="description_the_keck_observatory">The Keck Observatory is part of the W. M. Keck Foundation, founded in 1954 by entrepreneur and philanthropist William Keck, who supported scientific, engineering, and medical research. The observatory is located on the top of Mauna Kea (Hawaii Island) at an altitude of 4,145 m above sea level. It is equipped with two eight-story-high telescopes that detect targets with nanometer precision. Telescopes can track objects for hours. Each of them weighs 300 tons, and the mirrors consist of 36 hexagonal segments. Until 2007 and the advent of the Great Canary Telescope in Spain, the Keck telescopes were considered the largest in the world. They find planets by working on the principle of the Doppler effect - by measuring changes in starlight. Thanks to these telescopes, scientists at the observatory have discovered the largest number of exoplanets, including the youngest LkCa 15 b. Astronomers at the Keck Observatory are the first in history to image a planetary system in orbit around a star that is not the Sun. In 2017, NASA entered into a five-year agreement (valid from 2018 to 2023) with the owners of the observatory to jointly explore space. Prior to this, Keck scientists helped NASA accomplish the Kepler/K2 mission by providing high-resolution photographs to verify and describe the existence of hundreds of exoplanet orbits. And with the help of the telescopes of the observatory, it was possible to detect the first signs of water vapor on one of Jupiter\'s 79 moons. NASA scientists confirmed this in 2019.</string>
+    <string name="description_ligo_laser_observatory">The world\'s largest laser and wave observatory, LIGO, only gained notoriety in 2016 after researchers working at it managed to detect a powerful gravitational burst caused by the collision of two black holes, proving the presence of gravitational waves. LIGO includes the Hanford and Livingston observatories. The project is funded by the US National Science Foundation. The observatory has brought together researchers from all over the world: they observe cosmic gravitational waves, which were predicted back in 1916 by Einstein\'s general theory of relativity.</string>
+    <string name="description_heavenly_eye_in_china">The FAST spherical telescope is one of the latest space exploration instruments. This is a joint project of the National Astronomical Observatory of China (NAOC) and Russian entrepreneur Yuri Milner\'s Breakthrough Initiatives. The concept of the radio telescope began to be developed back in 1994, and it was only possible to build and launch it in 2016. The search for a suitable site for the construction took ten years, as the construction needed an area similar to a natural crater. The Chinese government has relocated 65 residents of a village in the Dawodang Depression in Guizhou Province and another 9,110 people within a five-kilometer radius of the telescope\'s location to clear the space and create a radio silence zone. The telescope is half a kilometer in diameter (about 30 football fields) and 140 meters deep. It consists of 4,450 small moving triangular panels that allow observations to be made from different angles. During operation, the telescope catches radio waves emitted by objects in outer space. Because of its size, FAST can collect signals from the far reaches of space. The researchers say that during a test run, the telescope detected radio waves from three rapidly rotating stars. The developers are confident that the telescope can help search for gravitational waves and explore the fleeting sound bursts of dead stars. Already in August 2021, FAST will become a research platform for astronomers from all over the world.</string>
+    <string name="first_observatory">First</string>
+    <string name="second_observatory">Second</string>
+    <string name="third_observatory">Third</string>
+    <string name="fourth_observatory">Fourth</string>
+    // Settings
+    <string name="dark_theme">Dark Theme</string>
+    <string name="language">Language</string>
+
+
 </resources>

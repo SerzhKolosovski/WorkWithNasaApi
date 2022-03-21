@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:adjustViewBounds="true"
+            android:layout_marginEnd="20dp" />
+
+        <TextView
+            android:id="@+id/photo_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            tools:text="@string/photo_id_item_photo" />
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:textSize="20sp"
+            android:layout_marginTop="45dp"
+            tools:text="@string/photo_id_item_photo" />
+
+        <TextView
+            android:id="@+id/photo_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="75dp"
+            android:textSize="20sp"
+            tools:text="@string/photo_data_item_photo" />
+
+        <TextView
+            android:id="@+id/data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="100dp"
+            android:textSize="20sp"
+            tools:text="@string/photo_data_item_photo" />
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

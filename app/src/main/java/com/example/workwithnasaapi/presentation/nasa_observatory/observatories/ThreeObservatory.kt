@@ -1,0 +1,48 @@
+package com.example.workwithnasaapi.presentation.nasa_observatory.observatories
+
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.example.workwithnasaapi.R
+import com.example.workwithnasaapi.databinding.FragmentThreeObservatoryBinding
+import com.example.workwithnasaapi.presentation.nasa_observatory.MainFragmentNasaObservatoryDirections
+
+class ThreeObservatory : Fragment() {
+    private val coordinates = floatArrayOf(25.653198016963227F, 106.85665130866087F)
+    private var _binding: FragmentThreeObservatoryBinding? = null
+    private val binding: FragmentThreeObservatoryBinding
+        get() = requireNotNull(_binding) {
+            "View was destroyed"
+        }
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        return FragmentThreeObservatoryBinding.inflate(inflater, container, false)
+            .also { binding ->
+                _binding = binding
+            }.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val nameOfObservatory = getString(R.string.heavenly_eye_in_china)
+        with(binding) {
+            buttonToMap.setOnClickListener {
+                findNavController().navigate(
+                    MainFragmentNasaObservatoryDirections.toMapsFragment(coordinates,nameOfObservatory)
+                )
+            }
+        }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+}

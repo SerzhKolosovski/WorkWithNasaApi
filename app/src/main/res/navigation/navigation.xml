@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.workwithnasaapi.presentation.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main_page">
+        <action
+            android:id="@+id/to_roversFragment"
+            app:destination="@id/roversFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/wait_anim"
+            app:popEnterAnim="@anim/wait_anim"
+            app:popExitAnim="@anim/slide_out" />
+        <action
+            android:id="@+id/to_mainFragmentNasaObservatory"
+            app:destination="@id/mainFragmentNasaObservatory"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/wait_anim"
+            app:popEnterAnim="@anim/wait_anim"
+            app:popExitAnim="@anim/slide_out"/>
+        <action
+            android:id="@+id/to_settingFragment"
+            app:destination="@id/settingFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/roversFragment"
+        android:name="com.example.workwithnasaapi.presentation.rovers_photo.main_page_rovers_photo.RoversFragment"
+        android:label="RoversFragment"
+        tools:layout="@layout/fragment_rovers">
+        <action
+            android:id="@+id/to_listPhotosFragment"
+            app:destination="@id/listPhotosFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/detailsPhotoFragment"
+        android:name="com.example.workwithnasaapi.presentation.rovers_photo.photo_details.DetailsPhotoFragment"
+        android:label="DetailsPhotoFragment"
+        tools:layout="@layout/fragment_details_photo">
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument
+            android:name="image"
+            app:argType="string" />
+        <argument
+            android:name="sol"
+            app:argType="string" />
+        <argument
+            android:name="name_camera"
+            app:argType="string" />
+        <argument
+            android:name="landing_data"
+            app:argType="string" />
+        <argument
+            android:name="launch_data"
+            app:argType="string" />
+        <argument
+            android:name="status"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/listPhotosFragment"
+        android:name="com.example.workwithnasaapi.presentation.rovers_photo.list_rovers_photos.ListPhotosFragment"
+        android:label="ListPhotosFragment"
+        tools:layout="@layout/fragment_list_photos">
+        <argument
+            android:name="modelOfRover"
+            app:argType="string" />
+        <action
+            android:id="@+id/to_detailsPhotoFragment"
+            app:destination="@id/detailsPhotoFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragmentNasaObservatory"
+        android:name="com.example.workwithnasaapi.presentation.nasa_observatory.MainFragmentNasaObservatory"
+        android:label="MainFragmentNasaObservatory"
+        tools:layout="@layout/fragment_main_nasa_observatory">
+        <action
+            android:id="@+id/to_mapsFragment"
+            app:destination="@id/mapsFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.workwithnasaapi.presentation.nasa_observatory.google_map.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <argument
+            android:name="coordinates"
+            app:argType="float[]" />
+        <argument
+            android:name="the_name_of_the_observatory"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.workwithnasaapi.presentation.settings.SettingFragment"
+        android:label="SettingFragment"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/to_languageFragment"
+            app:destination="@id/languageFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out"/>
+        <action
+            android:id="@+id/to_themeFragment"
+            app:destination="@id/themeFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.example.workwithnasaapi.presentation.settings.LanguageFragment"
+        android:label="LanguageFragment"
+        tools:layout="@layout/fragment_language"/>
+    <fragment
+        android:id="@+id/themeFragment"
+        android:name="com.example.workwithnasaapi.presentation.settings.ThemeFragment"
+        android:label="ThemeFragment"
+        tools:layout="@layout/fragment_theme"/>
+</navigation>

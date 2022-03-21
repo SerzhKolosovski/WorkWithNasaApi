@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_opportunity"
+            android:src="@drawable/opportunity"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_curiosity"
+            android:layout_gravity="center"
+            android:src="@drawable/curiosity"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_spirit"
+            android:layout_gravity="center"
+            android:src="@drawable/spirit"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            />
+        </LinearLayout>
+</ScrollView>
