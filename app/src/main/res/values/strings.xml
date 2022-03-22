@@ -1,18 +1,15 @@
 <resources>
     <string name="app_name" translatable="false">WorkWithNasaApi</string>
     <string name="google_map_api_key" translatable="false">AIzaSyB0pW0x7RVFo5RY8EFuz-QdER_sE8o68Uo</string>
-
     // Language screen
     <string name="language_title">Language</string>
     <string name="language_button_en">English</string>
     <string name="language_button_ru" translatable="false">Russian</string>
-
     // Dark mode screen
     <string name="night_mode_title">Dark theme</string>
     <string name="night_mode_button_dark">Dark mode</string>
     <string name="night_mode_button_light">Light mode</string>
     <string name="night_mode_button_default">System default mode</string>
-
     // Main page
     <string name="setting_title_main_page">SETTINGS</string>
     <string name="nasa_observatory_main_page">NASA observatory</string>
@@ -46,6 +43,4 @@
     <string name="dark_theme">Dark Theme</string>
     <string name="language">Language</string>
     <string name="your_google_map_api_key" translatable="false">5cV1SJ1HwYL4048FEQj1aEDHlr883yWuLtFJeR5o</string>
-
-
 </resources>
