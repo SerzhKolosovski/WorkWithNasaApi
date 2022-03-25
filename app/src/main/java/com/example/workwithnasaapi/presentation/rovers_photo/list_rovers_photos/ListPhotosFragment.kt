@@ -82,23 +82,7 @@ class ListPhotosFragment : Fragment() {
                             ).show()
                         }
                     }
-                    recyclerView.addItemDecoration(
-                        object : RecyclerView.ItemDecoration() {
-                            override fun getItemOffsets(
-                                outRect: Rect,
-                                view: View,
-                                parent: RecyclerView,
-                                state: RecyclerView.State
-                            ) {
-                                outRect.set(
-                                    outRect.left,
-                                    SIZE_TOP,
-                                    outRect.right,
-                                    outRect.bottom
-                                )
-                            }
-                        }
-                    )
+                    recyclerView.addHorizontalSpaceDecoration(SIZE_TOP)
                 }.launchIn(viewLifecycleOwner.lifecycleScope)
         }
     }
@@ -106,6 +90,24 @@ class ListPhotosFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    fun RecyclerView.addHorizontalSpaceDecoration(space: Int) {
+        addItemDecoration(
+            object : RecyclerView.ItemDecoration() {
+                override fun getItemOffsets(
+                    outRect: Rect,
+                    view: View,
+                    parent: RecyclerView,
+                    state: RecyclerView.State
+                ) {
+                    val position = parent.getChildAdapterPosition(view)
+                    if (position != 0 && position != parent.adapter?.itemCount) {
+                        outRect.top = space
+                    }
+                }
+            }
+        )
     }
 
     companion object {
