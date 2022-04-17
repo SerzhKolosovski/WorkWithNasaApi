@@ -1,5 +1,5 @@
 plugins {
-   `java-library`
+    `java-library`
     id ("org.jetbrains.kotlin.jvm")
 }
 
